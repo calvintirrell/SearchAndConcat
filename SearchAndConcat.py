@@ -29,7 +29,7 @@ class Window(Frame):
         runButton = Button(self, text="Run", command=self.search_concat)
         runButton.place(x=50, y=125)
 
-        # label describing the Run button
+        # label describing the Quit button
         quitLabel = Label(self, text="Click me to Quit the program")
         quitLabel.pack()
         quitLabel.place(x=100, y=150)
