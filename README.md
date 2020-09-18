@@ -1,6 +1,8 @@
 # SearchAndConcat
 This is a script that includes a simple but effective user interface to automate a task I had at a previous job.
 
+[Here is a video of the script working in action.](https://youtu.be/mCuUD6Bu2VE)
+
 Click the file 'SearchAndUpload' to see the code itself. Please note that any information or details from my previous job were removed before being uploaded.
 
 I made this script to remove the unnecessary process of having to do this manually and now it can be done with a few mouse clicks. Please note that I am not a programmer or developer and had no help other than Google and StockOverflow while making this script.
