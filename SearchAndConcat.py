@@ -56,7 +56,7 @@ class Window(Frame):
             # for each file found
             for file in files:
 
-                # each file needs to start with 'simulated' and ends with '.csv'
+                # each file needs to start with 'Pokemon' and ends with '.csv'
                 if file.startswith('Pokemon') and file.endswith('.csv'):
 
                     # displays file location and name
