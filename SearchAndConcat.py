@@ -11,10 +11,10 @@ class Window(Frame):
         self.master = master
         self.init_window()
 
-    # Creation of init_window
+    # create init_window
     def init_window(self):
 
-        # changing the title of our master widget
+        # change title of our 'widget'
         self.master.title("Search and Append")
 
         # allowing the widget to take the full space of the root window
@@ -25,7 +25,7 @@ class Window(Frame):
         runLabel.pack()
         runLabel.place(x=100, y=125)
 
-        # the Run button and it's attributes
+        # the Run button and its attributes
         runButton = Button(self, text="Run", command=self.search_concat)
         runButton.place(x=50, y=125)
 
@@ -34,11 +34,11 @@ class Window(Frame):
         quitLabel.pack()
         quitLabel.place(x=100, y=150)
 
-        # the Quit button and it's attributes
+        # the Quit button and its attributes
         quitButton = Button(self, text="Quit", command=self.client_exit)
         quitButton.place(x=50, y=150)
 
-    # function to find and join specific CSV files into 1 master file
+    # function to find and join specific CSV files into 1 single large file
     def search_concat(self):
 
         # indicates current working directory (where this script is located)
@@ -74,7 +74,7 @@ class Window(Frame):
         # combine all the CSV files from the all_file_names list
         combined_csv = pd.concat([pd.read_csv(f) for f in all_file_names])
 
-        # from the master list of CSV file data, make this a single CSV file called 'consolidated'
+        # from the large single list of CSV file data, make this a single CSV file called 'consolidated'
         combined_csv.to_csv('consolidated.csv', index=False, encoding='utf-8-sig')
 
         # once everything is done a pop up box displays the message below
